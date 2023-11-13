@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Tab = () => {
+const Tab = ({ name,className }) => {
   return (
-    <div>Tab</div>
+    <button className={`w-1/4 pb-8 border-orange-100 ${className}`}>
+      {name}
+    </button>
   )
 }
 

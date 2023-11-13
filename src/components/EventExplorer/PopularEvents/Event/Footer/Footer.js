@@ -2,12 +2,14 @@ import React from 'react'
 import Followers from './Followers'
 import Actions from './Actions'
 
-const Footer = () => {
+const Footer = ({followers}) => {
   return (
-    <>
-        <Followers/>
-        <Actions/>
-    </>
+    <div className='flex'>
+      <div className='flex-1'>
+        <Followers followers={followers}/>
+      </div>
+      <Actions />
+    </div>
   )
 }
 

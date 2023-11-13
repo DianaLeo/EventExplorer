@@ -5,7 +5,7 @@ import PopularEvents from './PopularEvents'
 
 const EventExplorer = () => {
     return (
-        <div className='px-[40px] py-[100px]'>
+        <div className='px-[40px] py-[100px] space-y-[100px]'>
             <Header />
             <FilterTabs />
             <PopularEvents />
