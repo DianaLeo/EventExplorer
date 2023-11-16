@@ -1,7 +1,7 @@
 import EventExplorer from "./components/EventExplorer";
 
 
-function App() {
+function Home() {
   return (
     <div className="max-w-[1300px] mx-auto">
       <EventExplorer />
@@ -9,4 +9,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;

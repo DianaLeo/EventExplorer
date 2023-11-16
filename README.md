@@ -1,6 +1,8 @@
 # Learning React Tao and Steps
 
-## React Tao
+[LIVE DEMO](https://dianaleo.github.io/EventExplorer/)
+
+## React Taos
 
 Write declarative code instead of imperative code
 
@@ -10,8 +12,6 @@ imperative code focuses on procedures
 Use componentization instead of javascript array.map
 
 ## Steps
-
-![figmaDesign](./public/figmaDesign.jpg)
 
 ### 1. Break the UI into a component hierarchy
 
@@ -150,7 +150,7 @@ window.history.pushState(undefined, undefined, newUrl);
 #### initialization:
 -> get tab state from window.location.search
   -> if window.location.search.tab is undefined (first time), set it to 'Popular'
-  
+
 #### click tab:
 -> set tab state
   -> tab state changed

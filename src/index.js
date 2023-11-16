@@ -1,9 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import "./index.css";
+import Home from "./Home";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+function App() {
+  return (
+    <BrowserRouter basename="/EventExplorer">
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <App />
