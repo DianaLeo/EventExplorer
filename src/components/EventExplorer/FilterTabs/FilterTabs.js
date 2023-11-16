@@ -1,15 +1,17 @@
-import React from 'react'
-import Tab from './Tab'
+import React from "react";
+import Tab from "./Tab/Tab";
+import { TAB } from "../EventExplorer";
 
-const FilterTabs = () => {
+const FilterTabs = ({ tab, onTabChange }) => {
   return (
     <div className="w-1/1 mx-auto border-b border-blue-200 font-montserrat text-center text-2xl color-black-100 ">
-        <Tab name='Popular' className='border-b-4'/>
-        <Tab name='Top rated'/>
-        <Tab name='New'/>
-        <Tab name='Followed'/>
+      {[TAB.POPULAR, TAB.TOP_RATED, TAB.NEW, TAB.FOLLOWED].map((t,index) => (
+        <Tab key={index} onClick={() => onTabChange(t)} isActive={tab === t}>
+          {t}
+        </Tab>
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default FilterTabs
+export default FilterTabs;

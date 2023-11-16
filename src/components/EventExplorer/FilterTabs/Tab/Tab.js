@@ -1,11 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const Tab = ({ name,className }) => {
+const Tab = ({ onClick, isActive, children }) => {
   return (
-    <button className={`w-1/4 pb-8 border-orange-100 ${className}`}>
-      {name}
+    <button
+      onClick={onClick}
+      className={`w-1/4 pb-8 ${isActive ? "border-b-4 border-orange-100" : ""}`}
+    >
+      {children}
     </button>
-  )
-}
+  );
+};
 
-export default Tab
+export default Tab;
